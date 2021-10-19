@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EligibilityCalculatorComponent implements OnInit {
 
+  check:string="true";
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +17,9 @@ export class EligibilityCalculatorComponent implements OnInit {
    ngAfterViewInit(): void {
      this.update();
    }
+   checkUpdate(){
+    this.check="";
+   }
    rupdate()
    {
     this.test=this.monthlyincome;
@@ -24,5 +28,6 @@ export class EligibilityCalculatorComponent implements OnInit {
    update(){
      console.log(this.monthlyincome);
      this.test=(this.monthlyincome*0.6)*60;
+     
    }
 }
