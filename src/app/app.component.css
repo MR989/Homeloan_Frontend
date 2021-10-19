@@ -1,0 +1,12 @@
+.navbar-custom{
+        background-color: #181818;
+}
+.nav-item{
+    padding-right: 60px;
+    
+}
+
+.nav-item a:hover{
+    color: black;
+    background-color: aliceblue;
+}
