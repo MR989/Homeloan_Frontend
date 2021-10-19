@@ -3,20 +3,20 @@
   <div class="card" style="width:35rem;" id="wrap">
     <div class="card-body">
       <br><br><br>
-      <p class="title">Loan Eligibility Calculator</p>
+      <!--<p class="title">Loan Eligibility Calculator</p>-->
       <br>
       <p class="title">Enter your monthly income</p>
       <input type="text" placeholder="Monthly Income" [(ngModel)]="monthlyincome" class="form-control">
       <br>
-      <button class="btn btn-primary" (click)="update()"> Calculate</button>
+      <button class="btn btn-dark btn" (click)="update();checkUpdate();"> Calculate</button>
       <br>
       <div class="jusify-center">
         <br>
-        <h3>
+        <h4 hidden="{{check}}">
           Loan Amount you are eligible for
-        </h3>
+        </h4>
         <h3>
-          <b><span class="result">
+          <b><span hidden="{{check}}"class="result">
               Rs {{test}}
             </span></b>
         </h3>

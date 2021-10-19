@@ -8,6 +8,7 @@ import { Options, LabelType } from '@angular-slider/ngx-slider';
 })
 export class EmiCalculatorComponent implements OnInit {
 
+  check:string="true";
   constructor() {  this.yrToggel = true;}
   pemi = {
     value: 25
@@ -110,7 +111,9 @@ export class EmiCalculatorComponent implements OnInit {
     }
     this.update();
   }
-
+  checkUpdate(){
+   this.check="";
+  }
   update() {
 
     var loanAmount = Number(this.pemi.value) * 100000;

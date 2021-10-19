@@ -4,4 +4,16 @@
   #content {
     text-align: center;
 }
+.btn{
+  margin-left: 38%;
+}
+.title{
+  margin-bottom: 10%;
+  margin-top: -10%;
+  align-self: center;
+  font-size: large;
+}
+.card{
+  border-radius: 12px;
+}
   
