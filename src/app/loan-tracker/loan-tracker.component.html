@@ -1,0 +1,78 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div class="hero-image">
+<br><br><br><br>
+<div style="text-align: center;">
+<h1 align="center" > LTI Home Loan Application </h1><br>
+    
+<button class="btn btn-primary btn-block/" type='button' routerLink="/">Home</button>  <br><br>
+
+        <div class="card" style="width:35rem;" id="wrap">
+            <h3 class="card-title align-items-center d-flex justify-content-center">User Login</h3>
+            <div class="card-body align-items-center d-flex justify-content-center">
+                
+        <div class="card-body">
+        <div>
+        <input type=text placeholder="trackerId" name=t1 [(ngModel)]="trackerId" required #id="ngModel"  minlength="1" maxlength="4">
+        <div *ngIf="id.invalid"> 
+            trackerId id required. 
+      </div>
+
+        <br>
+        <input type=text placeholder="phone number" name=t2 [(ngModel)]="phone" required #phn="ngModel" minlength="13" maxlength="13">
+        <div *ngIf="phn.invalid"> 
+            phone number required. 
+      </div>
+      <br>
+
+        <button type='button' class="btn btn-primary btn-block/" (click)="trackLoan(trackerId, phone)">search</button>
+       
+        </div>
+
+
+
+</div>
+</div>
+</div>
+<br><br>
+<table border="2" *ngIf="tempLoans && tempLoans.length" align="center">
+    <thead>
+        <tr>
+            <th>TrackerId</th>
+            <th>DEBTOR_PHONE</th>
+            <th>VERIFICATIONSTATUS</th>
+            <th>FINALAPPROVAL</th>
+            <th>ACCOUNTNUM</th>
+            <th>BALANCE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let track of tempLoans">
+            <td>{{track.trackerId}}</td>
+            <td>{{track.debtorPhone}}</td>
+            <td>{{track.verificationStatus}}</td>
+            <td>{{track.finalApproval}}</td>
+            <td>{{track.accountNum}}</td>
+            <td>{{track.balance}}</td>
+            <!--<td>
+                <button type='button' (click)="deleteEmployee(emp.employeeNumber)">Delete</button>
+            </td>-->
+        </tr>
+    </tbody>
+
+
+</table>
+
+</div>
+</div>
+
+
+
+
+<!-- <a href="/"><img src="assets/logo.jpeg" width="200" height="170" style="display:inline"></a> -->

@@ -1,0 +1,32 @@
+.required {
+    content: "*";
+    color: red;
+    font-size: 17px;
+}
+.form-control:valid {
+    border-left: 5px solid #42A948; /* green */
+  }
+
+.form-control:invalid {
+    border-left: 5px solid #a94442; /* red */
+}
+input{
+    width:25%;
+    
+}
+.custom-select{
+    font-size: 15px;
+}
+
+.card-header{
+    background-color: #fff;
+   }
+.hero-image {
+    background-image: url('../../../assets/background2.jpeg'); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 830px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
