@@ -8,14 +8,25 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <div class="hero-image">
 
-
+    
 <div style="text-align: center;">
-<h1 align="center" > LTI Home Loan Application </h1>
-<h1>Calculator</h1>
+<!-- <h1 align="center" >  </h1> -->
+<h2 class="title">Calculate Home Loan </h2>
 
 &nbsp;&nbsp;&nbsp;
-<button class="btn btn-primary" routerLink="Eligibility Calculator">Eligibility Calculator</button>&nbsp;&nbsp;&nbsp;
+<!--<button class="btn btn-primary" routerLink="Eligibility Calculator">Eligibility Calculator</button>&nbsp;&nbsp;&nbsp;
 <button class="btn btn-primary" routerLink="Emi Calculator"> Emi Calculator</button>&nbsp;&nbsp;&nbsp;
-<button class="btn btn-primary" routerLink="/"> Home</button>
+<button class="btn btn-primary" routerLink="/"> Home</button>-->
+<ul class="nav nav-tabs"  >
+    <li class="nav-item {{active1}} mlef">
+      <a class="nav-link " aria-current="page" (click)="eligibilityActive()" routerLink="Eligibility Calculator">Check Eligibility</a>
+    </li>
+    <li class="nav-item {{active2}}">
+      <a class="nav-link" (click)="emiCal()" routerLink="Emi Calculator">Calculate EMI</a>
+    </li>
+    <!--<li class="nav-item">
+      <a class="nav-link" routerLink="/">Home</a>
+    </li>-->
+</ul>
 </div>
 <router-outlet></router-outlet>

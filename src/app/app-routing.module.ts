@@ -38,6 +38,8 @@ const routes: Routes = [
         { path: 'EmiCalculator', component: EmiCalculatorComponent }
     ]
   },
+  {path:"admin",component:AdminLoginComponent},
+  {path:"user",component:UserLoginComponent},
   { path: 'Admin', component: AdminComponent,
   children: [
     { path: 'Adminlogin', component: AdminLoginComponent}]},

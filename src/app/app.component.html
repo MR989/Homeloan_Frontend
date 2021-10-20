@@ -1,21 +1,40 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height:120px">
-  <a class="navbar-brand"routerLink="/" href="#"><img src="assets/logog.jpeg" width="100" height="80" style="margin-top:-30px"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark  navbar-custom">
+  <a class="navbar-brand"routerLink="/" href="#"><img src="assets/logo1.png" width="150" height="70" style="margin-top:-20%;margin-left:-20px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" >
+
     <span class="navbar-toggler-icon"></span>
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="spacer"></div>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav  navbar-left">
       <li class="nav-item active">
         <a class="nav-link" href="#" routerLink="/">Home <span class="sr-only">(current)</span></a>
       </li>
+     
       <li class="nav-item active">
-        <a class="nav-link" href="#">About us</a>
+        <a class="nav-link" href="#" routerLink="/about">About Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="/features">Features</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="/faq">FAQ</a>
       </li>
       
       
-     <li class="nav-item active ">
-        <a class="nav-link" href="#" routerLink="/">Login <span class="sr-only">(current)</span></a>
+     <!-- <li class="nav-item active ">
+        <a class="nav-link" href="#" routerLink="/login">Login <span class="sr-only">(current)</span></a>
+      </li> -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Login
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="admin">Admin Login</a>
+          <a class="dropdown-item" routerLink="user">User Login</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">LogOut</a>
+        </div>
       </li>
 
     </ul>

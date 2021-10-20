@@ -4,7 +4,7 @@
   <br>
   <div class="spacer">
     <div class="row">
-      <div class="col-lg-8  col-lg-offset-1">
+      <div class="col-lg-8  col-lg-offset-1r ">
         <div class="well">
           <div class="form-group">
             <div class="col-md-12">
@@ -14,7 +14,7 @@
               <input type="text" style="width:44%;float:right;" class="form-control" (blur)="tbupdate(0)"
                 [(ngModel)]="query.amount" placeholder="Loan Amount" name="pemi.highValue" />
             </div>
-            <ngx-slider [(value)]="pemi.value" [options]="poptions" (userChangeEnd)="update()">
+            <ngx-slider  [(value)]="pemi.value" [options]="poptions" (userChangeEnd)="update()">
             </ngx-slider>
           </div>
 
@@ -53,10 +53,13 @@
             </ngx-slider>
             <ngx-slider *ngIf="!yrToggel" [(value)]="memi.value" [options]="moptions" (userChangeEnd)="update()">
             </ngx-slider>
+            <div class="btn"><button class="btn btn-dark btn" (click)="checkUpdate()">Check</button></div>
           </div>
 
+          
 
-          <div class="col-lg-3"><br><br>
+
+          <div class="col-lg-3" hidden="{{check}}"><br><br>
             <div class="well">
 
               <div class="jusify-center">

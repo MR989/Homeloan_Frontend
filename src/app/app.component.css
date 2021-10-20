@@ -1,0 +1,18 @@
+.navbar-custom{
+        background-color: #181818;
+}
+.nav-item{
+    padding-right: 60px;
+    
+}
+.spacer {
+    flex: 50 1 auto;
+  }
+
+.nav-item a:hover{
+    color: black;
+    background-color: aliceblue;
+}
+.navbar-collapse{
+    background-color: #181818;
+}

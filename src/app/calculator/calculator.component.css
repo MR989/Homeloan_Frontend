@@ -1,8 +1,21 @@
 .hero-image {
-    background-image: url('../../assets/background2.jpeg'); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 1300px; /* You must set a specified height */
+   /* background-image: url('../../assets/background2.jpeg'); /* The image used */
+    background-color: #ffffff; /* Used if the image is unavailable */
+    height: 400px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  .mlef{
+    margin-left: 38%;
+  }
+  .nav-item{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+    font-size: 17px;
+  }
+  .title{
+    margin-bottom: 0%;
+    
+    font-weight: 400;
+    font-size: 40px;
   }

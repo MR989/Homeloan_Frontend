@@ -7,12 +7,25 @@
     font-weight: 500;
     color: gray;
 }
+.ngx-slider{
+background: black;
+}
+.container{
+    margin-left: 22%;
+}
+
 .result{
     font-size: 16px;
     font-weight: 600;
 }
 h5,h6{
     color: gray;
+}
+.borderrad{
+    border-radius: 15px;
+}
+.btn{
+    margin-left: 40%;
 }
 .active{
     background-color: lightgray;
@@ -21,6 +34,11 @@ h5,h6{
 h1{
     font-size: 35px;
     color: gray;
+}
+
+.col-lg-3{
+    margin-top: 5%;
+    display: inline ;
 }
 @media only screen and (max-width: 768px) {
     h1{
