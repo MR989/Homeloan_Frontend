@@ -1,7 +1,7 @@
 .hero-image {
    /* background-image: url('../../assets/background2.jpeg'); /* The image used */
     background-color: #ffffff; /* Used if the image is unavailable */
-    height: 1300px; /* You must set a specified height */
+    height: 400px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -15,7 +15,7 @@
   }
   .title{
     margin-bottom: 0%;
-    margin-top: 0;
+    
     font-weight: 400;
     font-size: 40px;
   }

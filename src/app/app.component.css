@@ -5,6 +5,9 @@
     padding-right: 60px;
     
 }
+.spacer {
+    flex: 50 1 auto;
+  }
 
 .nav-item a:hover{
     color: black;
