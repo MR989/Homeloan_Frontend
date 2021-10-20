@@ -7,6 +7,9 @@
     font-weight: 500;
     color: gray;
 }
+.ngx-slider{
+background: black;
+}
 .container{
     margin-left: 22%;
 }

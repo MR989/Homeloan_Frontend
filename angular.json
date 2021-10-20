@@ -99,6 +99,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
+<<<<<<< HEAD
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -106,6 +107,8 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.js"
+=======
+>>>>>>> 76b4a6ca0b9b70ca1e01761010664b6b29ce7d69
             ]
           }
         }

@@ -14,7 +14,7 @@
               <input type="text" style="width:44%;float:right;" class="form-control" (blur)="tbupdate(0)"
                 [(ngModel)]="query.amount" placeholder="Loan Amount" name="pemi.highValue" />
             </div>
-            <ngx-slider [(value)]="pemi.value" [options]="poptions" (userChangeEnd)="update()">
+            <ngx-slider  [(value)]="pemi.value" [options]="poptions" (userChangeEnd)="update()">
             </ngx-slider>
           </div>
 
