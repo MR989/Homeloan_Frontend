@@ -24,7 +24,7 @@ export class AdminDashboardComponent implements OnInit {
     console.log(this.adminService.isLoggedIn);
     if(sessionStorage.getItem("isLoggedinAdmin") == "false")
     {
-      alert("Please Login First!!");
+      //alert("Please Login First!!");
       this.router.navigate(["/Admin/Adminlogin"]);
     }
    
