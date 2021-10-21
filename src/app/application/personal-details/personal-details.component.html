@@ -8,10 +8,10 @@
   <div class="form-group row">
     <div class="card-header mx-auto"> 
       <form [formGroup]="regForm" *ngIf="!submitted1" (ngSubmit)="onSubmit()" novalidate>
-        <h2>Property Details Form&#9989;</h2>
-        <h2>Employment Details Form&#9989;</h2>
-        <h2>Loan Details Form&#9989;</h2>
-
+        <h2>Property Details Form   &#10003;</h2>
+        <h2>Employment Details Form &#10003;</h2>
+        <h2>Loan Details Form       &#10003;</h2>
+        <h2>Personal Details </h2>
         <div class="form-group">
           <label>First Name<span class="required">*</span></label>
           <div>
@@ -216,7 +216,7 @@
         </div>
 
       </form>
-      <button class="btn btn-primary"
+      <button class="btn btn-dark"
         [disabled]="!userdetails.debtorFName||!userdetails.debtorAddress ||!userdetails.debtorEmail ||!userdetails.debtorPassword ||!userdetails.debtorConfirmPass ||!userdetails.debtorPhone||!userdetails.debtorDOB||!userdetails.debtorGender ||!userdetails.debtorNationality  ||!userdetails.debtorPancard || !userdetails.debtorAadhar"
         (click)="onSubmit()">Submit</button>
       <div class="alert alert-danger" *ngIf="errorMsg">

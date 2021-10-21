@@ -9,7 +9,7 @@
     <div class="form-group row">
       <div class="card-header mx-auto">
         <form #userForm="ngForm" *ngIf="!submitted" (ngSubmit)="onSubmit()" novalidate>
-          <h2>Property Details Form</h2>
+          <h2 class="propdetail">Property Details Form</h2>
 
           <div class="form-group">
             <label>Property Location<span class="required">*</span></label>
@@ -32,7 +32,7 @@
             <div *ngIf="propertyCost.errors?.required" class="text-danger">Estimated Amount is Required</div>
           </div>
 
-          <button class="btn btn-primary" [disabled]="userForm.form.invalid || topicHasError"
+          <button class="btn btn-dark" [disabled]="userForm.form.invalid || topicHasError"
             type="submit">Submit</button>
 
         </form>

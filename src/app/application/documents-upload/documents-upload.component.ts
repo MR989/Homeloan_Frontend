@@ -1,3 +1,5 @@
+import { UserIncomeDetails1 } from './../../userincomedetails1';
+import { TrackerService } from './../../tracker.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Debtor } from 'src/app/debtor';
@@ -21,6 +23,7 @@ export class DocumentsUploadComponent implements OnInit {
   a:UserIncomeDetails3[]=[];
   b:LoanDetails2[]=[];
   c: LoanTracker = new LoanTracker();
+  
   //savObj1: SavingsAccount=new SavingsAccount();
   shortLink: string = '';
   shortLink1: string = '';
@@ -48,7 +51,8 @@ export class DocumentsUploadComponent implements OnInit {
   file7: File;
   constructor(
     private fileUploadService: FileUploadService,
-    private router: Router,private testpostService: TestpostService
+    private router: Router,private testpostService: TestpostService,
+    
   ) {}
   ngOnInit(): void {}
   onChange(fileInputEvent: any) {
@@ -181,7 +185,9 @@ export class DocumentsUploadComponent implements OnInit {
   loaner=new LoanDetails2();
   propty=new UserIncomeDetails3();
   
+
   onSubmit() {
+   
     alert("Application done successfully!!!")
     this.userModeler.docs=this.obj1;
     // this.userModeler.propertiess=this.userModel;

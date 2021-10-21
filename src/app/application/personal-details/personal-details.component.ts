@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { UserPersonalDetails } from 'src/app/userPersonalDetails';
 import { Debtor } from 'src/app/debtor';
+import { TrackerService } from 'src/app/tracker.service';
 @Component({
   selector: 'app-personal-details',
   templateUrl: './personal-details.component.html',
@@ -35,7 +36,8 @@ userModel = new Debtor();
   genderControl : FormControl;
   dateControl : FormControl;
   submitted1 = false;
-  constructor(formBuilder : FormBuilder,private router:Router) {
+  deptid:number=0;
+  constructor(formBuilder : FormBuilder,private router:Router,private deptorser: TrackerService) {
     this.firstnameControl = new FormControl("",Validators.compose([Validators.required,Validators.minLength(3), Validators.pattern("[a-zA-Z ]*")]));
     this.middlenameControl = new FormControl("",Validators.compose([Validators.required,Validators.minLength(3), Validators.pattern("[a-zA-Z ]*")]));
   this.lastnameControl = new FormControl("",Validators.compose([Validators.required,Validators.minLength(3), Validators.pattern("[a-zA-Z ]*")]));
@@ -57,12 +59,27 @@ userModel = new Debtor();
    ngOnInit(): void {
   }
   onSubmit() {
+   
     var x=JSON.stringify(this.userdetails)
     console.log('hi there form 4'+x);
     localStorage.setItem('userdetails',x); 
     console.log(this.userdetails);
     this.submitted1 = true;
+   // this.getDeptorid();
     alert("Form 4 Submitted Sucessfully");
     this.router.navigate(['application/documentsUploadDetails']);
   }
+  // getDeptorid(){
+   
+     
+  //    this.deptorser.getDebtorId("9360299927").subscribe(
+  //      data=>{
+  //        this.deptid=data;
+  //      }
+       
+  //    ); 
+  //    alert("hey"+this.deptid);
+     
+    
+  // }
 }
